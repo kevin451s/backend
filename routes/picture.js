@@ -9,7 +9,7 @@ router.route('/')
 // Create new picture
   .post(pictureController.create);
 
-router.route('/pictures/:id')
+router.route('/:id')
   // GET return specific pictures
   .get(pictureController.show)
 

@@ -4,7 +4,7 @@ function getAll(request, response) {
   Service.find(function(error, services) {
     if(error) response.json({message: 'Could not find any services'});
 
-    response.json({services: services});
+    response.json(services);
   }).select('-__v');
 }
 

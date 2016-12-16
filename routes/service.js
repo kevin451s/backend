@@ -16,5 +16,5 @@ router.route('/:id')
   .patch(serviceController.patch)
   // DELETE remove specific picture from DB
   .delete(serviceController.delete);
-  
+
 module.exports = router;
